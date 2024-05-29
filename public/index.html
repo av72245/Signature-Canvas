@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Capture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signature-pad">
+        <h2>Please Sign Below</h2>
+        <canvas id="signatureCanvas" width="600" height="300"></canvas>
+        <div class="controls">
+            <button onclick="setColor('#000000')">Black</button>
+            <button onclick="setColor('#0000FF')">Blue</button>
+            <button onclick="setColor('#FF0000')">Red</button>
+            <input type="color" id="customColor" onchange="setColor(this.value)" value="#000000">
+            
+            <label for="thickness">Pen Thickness:</label>
+            <input type="range" id="thickness" min="1" max="10" value="2">
+        </div>
+        <button onclick="saveAsImage()">Save as Image</button>
+        <button onclick="saveAsPDF()">Save as PDF</button>
+        <button onclick="clearCanvas()">Clear Signature</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

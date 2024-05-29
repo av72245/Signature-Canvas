@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.signature-pad {
+  text-align: center;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+#signatureCanvas {
+  width: 600px; /* Larger width for better drawing area */
+  height: 300px; /* Increased height */
+  border: 2px dashed #ccc; /* Dashed border for better visibility */
+  background: #fafafa; /* Light grey background */
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+}
+
+button:nth-child(1) { background-color: #000000; } /* Black */
+button:nth-child(2) { background-color: #0000FF; } /* Blue */
+button:nth-child(3) { background-color: #FF0000; } /* Red */
+input[type="color"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="range"] {
+  vertical-align: middle;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
